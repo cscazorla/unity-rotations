@@ -52,7 +52,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\InitialKick.cs" />
+     <Compile Include="Assets\Scripts\InitialVelocity.cs" />
+     <Compile Include="Assets\Scripts\MagnusEffect.cs" />
      <Compile Include="Assets\Scripts\ShowStats.cs" />
+     <Compile Include="Assets\Scripts\Torque.cs" />
      <Compile Include="Assets\Scripts\UnstableRotation.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

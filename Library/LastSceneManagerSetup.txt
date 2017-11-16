@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/02 Cylinder.unity
+- path: Assets/Scenes/06 Magnus Effect.unity
   isLoaded: 1
   isActive: 1

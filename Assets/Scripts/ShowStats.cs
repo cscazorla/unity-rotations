@@ -40,6 +40,44 @@ public class ShowStats : MonoBehaviour {
 
 
 
-//		Debug.Log (name + " COM " + rb.centerOfMass);
+		// Scene 04 Parallel Axis Theorem
+		// How does Unity calculate I for compound objects?
+		// It always rotates around the center of the mass
+		// https://en.wikipedia.org/wiki/Parallel_axis_theorem
+		// Compare I when Man is an isolated object (125.8, 2.0, 125.8)
+		// and when the Discus is attached (in the Hierarchy) to it (99.8,22.0,115.7)
+		// The Discus is contributing to I (I = I_0 + mr^2)
+		// Also de Center of Mass is changing (uncomment the following line)
+		Debug.Log (name + " COM " + rb.centerOfMass);
+		// Move the Discus around
+
+		// If we enable now the Initiak Kick (0,2,0) Unity rotates the system around
+		// the center of mass 
+
+
+
+		// Scene 05 Torques
+		// Tau = I * alpha    VS      F = m * a
+		// https://www.4physics.com/phy_demo/newton/newton_rot.htm
+		// https://www.4physics.com/phy_demo/newton/newton_rot2.htm
+		// Apply Torque script to the sphere. Check out left hand rule
+
+		// Duplicate the sphere. This one will have only 20kgs of mass
+		// The same torque produces different results (the lower the mass the faster it accelerates)
+		// I is different on each sphere so the resistance to acceleration is different.
+
+		// How should I scale up the second ball to match the same I ?
+		// (2.2354,2.2354,2.2354)
+		// Now it gets the same acceleration
+
+
+
+
+		// Scene 06 Magnus Effect
+		// Football ball    W x V  => produces magnus effect
+		// https://qph.ec.quoracdn.net/main-qimg-2758763144b4ed978f42cbdeb0d2a63b
+		// Wolfram Alpha: [1,1,0]x[1,0,0]
+		// https://www.wolframalpha.com/input/?i=%5B1,1,0%5Dx%5B1,0,0%5D
+
 	}
 }
